@@ -1,0 +1,40 @@
+<br>
+<br>
+
+<div align="center">
+        <div align="right" id="block">
+          <form>
+            <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Enter the FirstName">
+          </form>
+        </div>
+</div>
+
+<table id="myTable" align ="center">
+   
+<tr >
+<th (click) = "onSort()" >ID</th>
+<th (click) = "onSortln()">Lastname</th>
+<th (click) = "onSortfn()">Firstname</th>
+<th>Email</th>
+<th>Is Active ?</th>
+<th>Date Created</th>
+<th>Date Updated</th>
+</tr>
+
+<tr *ngFor = 'let one of customer_detail' (click) = "onClick(one)"  >
+
+
+<td>{{one.ID}}</td>
+<td>{{one.lastname}}</td>
+<td>{{one.firstname}}</td>
+<td>{{one.email}}</td>
+<td>{{one.active}}</td>
+<td>{{one.datec}}</td>
+<td>{{one.dateu}}</td>
+
+
+</tr>
+
+
+</table>
+

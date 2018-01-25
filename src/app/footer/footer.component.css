@@ -1,0 +1,11 @@
+footer{
+    position: bottom;
+    width: auto;
+    height: 100px;
+    background: #000000;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+}
